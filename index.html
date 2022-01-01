@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Payment Coffee App</title>
+    <link rel="icon" href="./img/logo_app.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="parent mt-1">
+      <h1 class="text-center">payment coffee</h1>
+      <div class="row p-2">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+          <div class="card ml-2">
+            <form method="post">
+               <div class="form-group row ml-2">
+                 <label class="col-sm-2 col-form-label text-nowrap mt-3">Product Name</label>
+                 <div class="col-sm-10">
+                   <input type="text" class="form-control mt-3 ml-2" placeholder="Name" id="prod_name">
+                 </div>
+               </div>
+               <div class="form-group row ml-2">
+                 <label class="col-sm-2 col-form-label text-nowrap mt-3">Image</label>
+                 <div class="col-sm-10">
+                   <input type="text" class="form-control mt-3 ml-2" placeholder="Image" id="prod_img">
+                 </div>
+               </div>
+               <div class="form-group row ml-2">
+                  <label class="col-sm-2 col-form-label text-nowrap mt-3">Product Quantity</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control mt-3 ml-2" placeholder="Quantity" id="prod_quantity">
+                  </div>
+               </div>
+               <div class="form-group row ml-2">
+                 <label class="col-sm-2 col-form-label text-nowrap mt-3">Product Price</label>
+                 <div class="col-sm-10">
+                   <input type="text" class="form-control mt-3 ml-2" placeholder="Price" id="prod_price">
+                 </div>
+               </div>
+              <button class="btn-get-payment" type="button" onclick="getPaymentForOrderCoffee()">get payment</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="card">
+            <h2 class="text-center text-info">Checkout Payment</h2>
+            <div id="total_price"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
